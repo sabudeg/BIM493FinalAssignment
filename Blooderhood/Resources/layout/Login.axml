@@ -12,26 +12,28 @@
 	android:minHeight="25px"
 	>
 	    <TextView
-        android:id="@+id/phoneText"
+        android:id="@+id/EmailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="70dp"
         android:layout_marginTop="130dp"
-        android:text="Phone:" />
-
-   <EditText
-        android:id="@+id/phoneEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="140dp"
-        android:ems="10"
-        android:hint="please type your number"
-        android:inputType="phone" />
+        android:text="Email:" 
+	android:textColor="@color/loginText"/>
+	<EditText
+		android:id="@+id/EmailEdit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="70dp"
+		android:layout_marginTop="140dp"
+		android:ems="10"
+		android:hint="please type your number"
+		android:inputType="textEmailAddress"
+		android:backgroundTint="@color/loginText"
+	/>
 
 
 		    <TextView
@@ -42,7 +44,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="70dp"
         android:layout_marginTop="240dp"
-        android:text="Password" />
+        android:text="Password"
+	android:textColor="@color/loginText"/>
 	<EditText
 		android:id="@+id/passwordEdit"
 		android:layout_width="wrap_content"
@@ -53,7 +56,8 @@
 		android:layout_marginTop="250dp"
 		android:ems="10"
 		android:hint="please enter password"
-		android:inputType="textVisiblePassword" />
+		android:inputType="textVisiblePassword" 
+	android:backgroundTint="@color/loginText"/>
 
     <Button
         android:id="@+id/loginButton2"

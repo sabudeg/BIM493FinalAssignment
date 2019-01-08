@@ -5,6 +5,7 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Firebase;
 
 namespace Blooderhood
 {
@@ -12,12 +13,11 @@ namespace Blooderhood
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
         TextView textMessage;
+        public static FirebaseApp app;
 
-
-        
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
+            
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 

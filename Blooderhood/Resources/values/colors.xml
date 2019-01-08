@@ -5,6 +5,8 @@
     <color name="colorAccent">#3498db</color>
 
   <color name="bloodRed">#8a0303</color>
+
+  <color name="loginText">#ffeeeeee</color>
   
   
 </resources>

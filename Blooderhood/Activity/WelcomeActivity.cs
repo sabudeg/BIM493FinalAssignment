@@ -19,9 +19,6 @@ namespace Blooderhood
     public class WelcomeActivity : AppCompatActivity
     {
 
-        Button btnLogin;
-        EditText edtEmail;
-
         public static FirebaseApp app;
         FirebaseAuth auth;
 
@@ -61,14 +58,12 @@ namespace Blooderhood
         {
             Intent loginRedir = new Intent(this, typeof(LoginActivity));
             StartActivity(loginRedir);
-            base.Finish();
         }
 
         void onSignupClick()
         {
             Intent signupRedir = new Intent(this, typeof(SignupActivity));
             StartActivity(signupRedir);
-            base.Finish();
         }
     }
 }
