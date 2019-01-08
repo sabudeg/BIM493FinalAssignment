@@ -4,4 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+  
+    <string name="google_maps_key">AIzaSyB4qCCP0pgN1kipr2Xs70o03cmsftlWub4</string>
 </resources>
