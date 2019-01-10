@@ -12,13 +12,14 @@ using Android.Views;
 using Android.Widget;
 using Firebase;
 using Firebase.Auth;
+using Firebase.Database;
 
 namespace Blooderhood
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_launcher_round", MainLauncher = true)]
+    //[Activity(Label = "WelcomeActivity")]
     public class WelcomeActivity : AppCompatActivity
     {
-
         public static FirebaseApp app;
         FirebaseAuth auth;
 
@@ -27,9 +28,8 @@ namespace Blooderhood
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Welcome);
 
-            InitFirebaseAuth();
-
-
+            InitFirebase();
+       
             Button loginButton = FindViewById<Button>(Resource.Id.loginButton);
             loginButton.Click += delegate {
                 onLoginClick();
@@ -42,11 +42,12 @@ namespace Blooderhood
 
         }
 
-        private void InitFirebaseAuth()
+        private void InitFirebase()
         {
             var options = new FirebaseOptions.Builder()
                 .SetApplicationId("1:1096414867975:android:278a340919bfc0ca")
                 .SetApiKey("AIzaSyCxFuyTu2zXLbiYa8bGqetwz8_Rud2Dquw")
+                .SetDatabaseUrl("https://blooderhood-11f9a.firebaseio.com")
                 .Build();
 
             if (app == null)

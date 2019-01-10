@@ -16,7 +16,6 @@ using static Android.Views.View;
 namespace Blooderhood
 {
 
-
     [Activity(Label = "SignupActivity")]
     public class SignupActivity : Activity, IOnCompleteListener
     {

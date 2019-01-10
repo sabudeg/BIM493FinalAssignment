@@ -16,7 +16,7 @@ using Firebase.Auth;
 namespace Blooderhood
 {
     [Activity(Label = "LoginActivity")]
-    public class LoginActivity : Activity, IOnCompleteListener
+    public class LoginActivity : AppCompatActivity, IOnCompleteListener
     {
         Button btnCancel;
         Button btnLogin;

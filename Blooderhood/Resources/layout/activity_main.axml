@@ -7,21 +7,23 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="#ff8a0303">
-	<TextView
-		android:id="@+id/message"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_centerInParent="true"
-		android:layout_marginLeft="@dimen/activity_horizontal_margin"
-		android:layout_marginStart="@dimen/activity_horizontal_margin"
-		android:layout_marginTop="@dimen/activity_vertical_margin"
-		android:text="@string/title_home" />
 
 		<fragment xmlns:android="http://schemas.android.com/apk/res/android"
           android:id="@+id/map"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           class="com.google.android.gms.maps.MapFragment" />
+
+
+	<FrameLayout
+		android:id="main_frame"
+		android:layout_width="match_parent"
+		android:layout_heigh="match_parent"
+		android:layout_above="@android:id/navigation"
+		android:layout_alignStart="true"
+		android:layout_alignParentTop="true">
+		
+		</FrameLayout>
 
 	<android.support.design.widget.BottomNavigationView
 		android:id="@+id/navigation"

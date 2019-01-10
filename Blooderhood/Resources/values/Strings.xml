@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Blooderhood</string>
   <string name="name_capitals">BLOODERHOOD</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">MAP</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
   
