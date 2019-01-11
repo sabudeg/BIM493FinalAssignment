@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
@@ -14,6 +15,7 @@ namespace Blooderhood
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
 
+
         private BottomNavigationView mainNav;
         private FrameLayout mainFrame;
 
@@ -21,7 +23,6 @@ namespace Blooderhood
         private UserDetailFragment userDetailFragment;
 
         
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
@@ -35,6 +36,12 @@ namespace Blooderhood
             mainNav = (BottomNavigationView)FindViewById(Resource.Id.navigationBar);
 
             mainNav.SetOnNavigationItemSelectedListener(this);
+
+            //Button createPostButton = FindViewById<Button>(Resource.Id.createPost);
+            //createPostButton.Click += delegate
+            //{
+            //    StartActivity(new Intent(this, typeof(PostActivity)));
+            //};
 
         }
 

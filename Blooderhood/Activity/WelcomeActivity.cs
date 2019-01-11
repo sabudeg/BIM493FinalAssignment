@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Blooderhood.Activity;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
@@ -44,7 +45,7 @@ namespace Blooderhood
 
         private void InitFirebase()
         {
-            var options = new FirebaseOptions.Builder()
+            var options = new Firebase.FirebaseOptions.Builder()
                 .SetApplicationId("1:1096414867975:android:278a340919bfc0ca")
                 .SetApiKey("AIzaSyCxFuyTu2zXLbiYa8bGqetwz8_Rud2Dquw")
                 .SetDatabaseUrl("https://blooderhood-11f9a.firebaseio.com")
@@ -57,8 +58,10 @@ namespace Blooderhood
 
         void onLoginClick()
         {
-            Intent loginRedir = new Intent(this, typeof(LoginActivity));
-            StartActivity(loginRedir);
+            //Intent loginRedir = new Intent(this, typeof(LoginActivity));
+            //StartActivity(loginRedir);
+
+            StartActivity(new Intent(this, typeof(PostActivity)));
         }
 
         void onSignupClick()

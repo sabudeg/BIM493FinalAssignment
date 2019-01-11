@@ -25,8 +25,6 @@ namespace Blooderhood
         FirebaseAuth auth = FirebaseAuth.GetInstance(WelcomeActivity.app);
         private const string FirebaseURL = "https://blooderhood-11f9a.firebaseio.com"; //Firebase Database URL
 
-        FirebaseAuth mAuth;
-
         FirebaseDatabase database;
         DatabaseReference myRef;
 
@@ -64,8 +62,7 @@ namespace Blooderhood
         {
             if (task.IsSuccessful)
             {
-                mAuth = FirebaseAuth.GetInstance(WelcomeActivity.app);
-                FirebaseUser fUser = mAuth.CurrentUser;
+                FirebaseUser fUser = auth.CurrentUser;
 
                 Firebase.FirebaseApp.InitializeApp(this);
                 database = FirebaseDatabase.GetInstance(WelcomeActivity.app);

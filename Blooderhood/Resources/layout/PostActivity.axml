@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="@color/bloodRed"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    >
+	<TextView
+		android:id="@+id/textPostName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="28dp"
+		android:layout_marginTop="39dp"
+		android:text="Name"
+		android:textColor="@color/loginText" 
+	    />
+
+    <EditText
+        android:id="@+id/postName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPostName"
+        android:layout_alignStart="@+id/textPostName"
+        android:ems="10"
+        android:inputType="textPersonName"
+		
+	/>
+
+
+    <TextView
+        android:id="@+id/textPostSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textPostName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="110dp"
+        android:text="Surname" 
+	android:textColor="@color/loginText"/>
+
+    <EditText
+        android:id="@+id/postSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPostSurname"
+        android:layout_alignStart="@+id/textPostName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+	<TextView
+        android:id="@+id/textBloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood type:"
+		android:layout_below="@+id/PostSurname"
+		android:layout_alignStart="@+id/textPostName"
+		android:textColor="@color/loginText"
+         />
+
+    <EditText
+        android:id="@+id/postBtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="blood type"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textBloodType"
+        android:layout_alignStart="@+id/textPostName"
+         />
+
+	 <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textPostName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="270dp"
+        android:text="Phone" 
+	android:textColor="@color/loginText"/>
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textPostName"
+        android:ems="10"
+        android:hint="5xx xxx xx xx"
+        android:inputType="number" 
+	 />
+
+
+	<Button
+        android:id="@+id/pickLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PICK A LOCATION"
+       android:layout_below="@+id/editPhone"
+		android:layout_marginTop="25dp"
+        android:layout_alignStart="@+id/textPostName"
+	/>
+    
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="53dp"
+        android:text="POST" />
+
+    <Button
+        android:id="@id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonPost"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="92dp"
+        android:text="CANCEL" />
+
+</RelativeLayout>

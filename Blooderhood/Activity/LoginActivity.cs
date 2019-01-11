@@ -52,7 +52,7 @@ namespace Blooderhood
             if (task.IsSuccessful)
             {
                 Toast.MakeText(this, "Login successful", ToastLength.Long).Show();
-                StartActivity(new Android.Content.Intent(this, typeof(MainActivity)));
+                StartActivity(new Intent(this, typeof(MainActivity)));
                 Finish();
             }
             else
