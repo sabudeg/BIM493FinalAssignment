@@ -4,90 +4,70 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Blooderhood.Activity;
 using Firebase;
-using Android.Gms.Maps;
-using Android.Gms.Maps.Model;
-using Android.Content;
-using static Android.Gms.Maps.GoogleMap;
 
 namespace Blooderhood
 {
     //[Activity(Label = "@string/app_name", Icon = "@mipmap/ic_launcher_round", Theme = "@style/AppTheme", MainLauncher = true)]
-    [Activity(Label = "MainActivity")]
-    public class MainActivity : AppCompatActivity,IOnMapReadyCallback, IInfoWindowAdapter, BottomNavigationView.IOnNavigationItemSelectedListener
+    [Activity(Label = "MainActivity", Theme = "@style/AppTheme")]
+    public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
-        TextView textMessage;
-        public static FirebaseApp app;
 
-        private GoogleMap mMap;
+        private BottomNavigationView mainNav;
+        private FrameLayout mainFrame;
+
+        private PostFragment postFragment;
+        private UserDetailFragment userDetailFragment;
+
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            
+
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            SetUpMap();
+            postFragment = new PostFragment();
+            userDetailFragment = new UserDetailFragment();
 
-            textMessage = FindViewById<TextView>(Resource.Id.message);
-            BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
-            navigation.SetOnNavigationItemSelectedListener(this);
-        }
-        private void SetUpMap()
-        {
-            if (mMap == null)
-            {
-                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.map).GetMapAsync(this);
-            }
+            mainFrame = (FrameLayout)FindViewById(Resource.Id.main_frame);
+            mainNav = (BottomNavigationView)FindViewById(Resource.Id.navigationBar);
+
+            mainNav.SetOnNavigationItemSelectedListener(this);
+
         }
 
-        public void OnMapReady(GoogleMap googleMap)
-        {
-            mMap = googleMap;
-
-            LatLng latlng = new LatLng(39.766193, 30.526714);
-
-            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(latlng, 13);
-            mMap.MoveCamera(camera);
-
-            MarkerOptions options = new MarkerOptions()
-                .SetPosition(latlng)
-                .SetTitle("ESK")
-                .SetSnippet("burak")
-                .Draggable(true);
-
-            mMap.AddMarker(options);
-            mMap.SetInfoWindowAdapter(this);
-        }
 
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
             {
                 case Resource.Id.navigation_dashboard:
-                    textMessage.SetText(Resource.String.title_dashboard);
+                    mainNav.ItemBackgroundResource = Resource.Color.material_blue_grey_950;
+                    setFragment(postFragment);
                     return true;
                 case Resource.Id.navigation_home:
-                    textMessage.SetText(Resource.String.title_home);
+                    
                     return true;
                 case Resource.Id.navigation_notifications:
-                    textMessage.SetText(Resource.String.title_notifications);
+                    setFragment(userDetailFragment);
                     return true;
             }
             return false;
         }
 
-        public View GetInfoContents(Marker marker)
+
+
+        private void setFragment(Fragment fragment)
         {
-            throw new System.NotImplementedException();
+            FragmentTransaction ft = FragmentManager.BeginTransaction();
+            ft.Replace(Resource.Id.main_frame, fragment);
+            ft.Commit();
+            //SupportFragmentManager.BeginTransaction();
+
         }
 
-        public View GetInfoWindow(Marker marker)
-        {
-            View view = LayoutInflater.Inflate(Resource.Layout.pinInfo, null, false);
-            view.FindViewById<TextView>(Resource.Id.infoName).Text += "Burak D.";
-            return view;
-        }
     }
 }
 

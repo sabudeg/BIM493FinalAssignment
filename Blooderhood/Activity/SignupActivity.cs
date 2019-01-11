@@ -7,6 +7,7 @@ using Android.Content;
 using Android.Gms.Tasks;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using Firebase.Auth;
@@ -15,9 +16,8 @@ using static Android.Views.View;
 
 namespace Blooderhood
 {
-
-    [Activity(Label = "SignupActivity")]
-    public class SignupActivity : Activity, IOnCompleteListener
+    [Activity(Label = "SignupAct")]
+    public class SignupActivity : AppCompatActivity, IOnCompleteListener
     {
         EditText editName, editSurname, editAge, editEmail, editPassword, editPhone;
         Button btnCancel, btnSignup;

@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace Blooderhood.Activity
 {
-    public class UserInfoFragment : Fragment
+    public class UserDetailFragment : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,10 +25,8 @@ namespace Blooderhood.Activity
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+           return inflater.Inflate(Resource.Layout.UserDetailFragment, container, false);
 
-            //View view = inflater.Inflate()
-            return base.OnCreateView(inflater, container, savedInstanceState);
         }
     }
 }
