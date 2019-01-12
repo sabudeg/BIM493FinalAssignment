@@ -61,7 +61,7 @@ namespace Blooderhood
             //Intent loginRedir = new Intent(this, typeof(LoginActivity));
             //StartActivity(loginRedir);
 
-            StartActivity(new Intent(this, typeof(PostActivity)));
+            StartActivity(new Intent(this, typeof(LoginActivity)));
         }
 
         void onSignupClick()

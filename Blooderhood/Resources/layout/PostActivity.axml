@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Blood type:"
-		android:layout_below="@+id/PostSurname"
+		android:layout_below="@+id/postSurname"
 		android:layout_alignStart="@+id/textPostName"
 		android:textColor="@color/loginText"
          />
@@ -109,6 +109,17 @@
 		android:layout_marginTop="25dp"
         android:layout_alignStart="@+id/textPostName"
 	/>
+
+	<TextView
+        android:id="@+id/infoLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textPostName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+		android:layout_marginTop="425dp"
+        android:text="Location: " 
+	android:textColor="@color/loginText"/>
     
     <Button
         android:id="@+id/buttonPost"

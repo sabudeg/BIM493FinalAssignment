@@ -79,6 +79,7 @@ namespace Blooderhood
 
                 myRef.Child(fUser.Uid).Child("name").SetValue(editName.Text);
                 myRef.Child(fUser.Uid).Child("surname").SetValue(editSurname.Text);
+                myRef.Child(fUser.Uid).Child("email").SetValue(fUser.Email);
                 myRef.Child(fUser.Uid).Child("age").SetValue(editAge.Text);
                 myRef.Child(fUser.Uid).Child("phone").SetValue(editPhone.Text);
                 myRef.Child(fUser.Uid).Child("isActvie").SetValue(false);

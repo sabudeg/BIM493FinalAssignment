@@ -9,24 +9,25 @@
     android:layout_alignParentStart="true"
     android:background="@color/bloodRed"
     >
-	
+	<TextView
+		android:id="@+id/PostName"
+		android:layout_width="250"
+		android:layout_height="match_parent"
+		android:layout_above="@id/createPost"
+		android:text="Welcome to the blood sharing platform"
+		android:textColor="@color/loginText"
+		android:layout_centerInParent="true"
+		android:autoSizeTextType="uniform"
+		android:textAlignment="center"
+		android:textStyle="bold"
+		android:textAllCaps="false" 
+	    />
 
     <Button
         android:id="@+id/createPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="250dp"
-        android:text="CREATE POST" />
-
-    <Button
-        android:id="@+id/cancelPost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/createPost"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="92dp"
-        android:text="CANCEL" />
+        android:text="CREATE POST" 
+	    android:layout_centerInParent="true"/>
 
 </RelativeLayout>

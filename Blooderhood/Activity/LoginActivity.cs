@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Support.V7.App;
 using Android.Gms.Tasks;
 using Firebase.Auth;
+using Blooderhood.Activity;
 
 namespace Blooderhood
 {

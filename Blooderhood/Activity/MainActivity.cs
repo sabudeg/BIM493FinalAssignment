@@ -22,7 +22,7 @@ namespace Blooderhood
         private PostFragment postFragment;
         private UserDetailFragment userDetailFragment;
 
-        
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
@@ -37,12 +37,6 @@ namespace Blooderhood
 
             mainNav.SetOnNavigationItemSelectedListener(this);
 
-            //Button createPostButton = FindViewById<Button>(Resource.Id.createPost);
-            //createPostButton.Click += delegate
-            //{
-            //    StartActivity(new Intent(this, typeof(PostActivity)));
-            //};
-
         }
 
 
@@ -55,7 +49,6 @@ namespace Blooderhood
                     setFragment(postFragment);
                     return true;
                 case Resource.Id.navigation_home:
-                    
                     return true;
                 case Resource.Id.navigation_notifications:
                     setFragment(userDetailFragment);
@@ -64,15 +57,11 @@ namespace Blooderhood
             return false;
         }
 
-
-
         private void setFragment(Fragment fragment)
         {
             FragmentTransaction ft = FragmentManager.BeginTransaction();
             ft.Replace(Resource.Id.main_frame, fragment);
             ft.Commit();
-            //SupportFragmentManager.BeginTransaction();
-
         }
 
     }

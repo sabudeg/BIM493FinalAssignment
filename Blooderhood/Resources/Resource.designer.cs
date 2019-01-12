@@ -2612,9 +2612,6 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0040
 			public const int META = 2131427392;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int PostSurname = 2131427537;
-			
 			// aapt resource value: 0x7f0b0041
 			public const int SHIFT = 2131427393;
 			
@@ -2816,8 +2813,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b00e2
 			public const int editPassword = 2131427554;
 			
-			// aapt resource value: 0x7f0b00d4
-			public const int editPhone = 2131427540;
+			// aapt resource value: 0x7f0b00d3
+			public const int editPhone = 2131427539;
 			
 			// aapt resource value: 0x7f0b00dc
 			public const int editSurname = 2131427548;
@@ -2893,6 +2890,9 @@ namespace Blooderhood
 			
 			// aapt resource value: 0x7f0b00c3
 			public const int infoCall = 2131427523;
+			
+			// aapt resource value: 0x7f0b00d5
+			public const int infoLoc = 2131427541;
 			
 			// aapt resource value: 0x7f0b00c1
 			public const int infoLocation = 2131427521;
@@ -3011,8 +3011,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b00a7
 			public const int passwordText = 2131427495;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int pickLocationButton = 2131427541;
+			// aapt resource value: 0x7f0b00d4
+			public const int pickLocationButton = 2131427540;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int pin = 2131427415;
@@ -3041,8 +3041,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b00c7
 			public const int place_autocomplete_separator = 2131427527;
 			
-			// aapt resource value: 0x7f0b00d2
-			public const int postBtype = 2131427538;
+			// aapt resource value: 0x7f0b00d1
+			public const int postBtype = 2131427537;
 			
 			// aapt resource value: 0x7f0b00cd
 			public const int postName = 2131427533;
@@ -3221,8 +3221,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b00e1
 			public const int textView10 = 2131427553;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int textView15 = 2131427539;
+			// aapt resource value: 0x7f0b00d2
+			public const int textView15 = 2131427538;
 			
 			// aapt resource value: 0x7f0b00d7
 			public const int textView6 = 2131427543;

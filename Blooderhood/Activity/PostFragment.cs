@@ -16,30 +16,23 @@ namespace Blooderhood.Activity
 {
     public class PostFragment : Fragment
     {
-       
         Button createPostButton;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            
-
-            // Create your fragment here
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            // Use this to return your custom view for this Fragment
-
-            
-           View view = inflater.Inflate(Resource.Layout.PostFragment, container, false);
+            View view = inflater.Inflate(Resource.Layout.PostFragment, container, false);
+            createPostButton = view.FindViewById<Button>(Resource.Id.createPost);
+            createPostButton.Click += delegate
+            {
+                StartActivity(new Intent(this.Activity, typeof(PostActivity)));
+            };
 
             return view;
-
-            
-
-            //return base.OnCreateView(inflater, container, savedInstanceState);
         }
 
     }
