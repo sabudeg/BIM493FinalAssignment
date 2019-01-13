@@ -7,14 +7,14 @@
 	android:background="@color/bloodRed">
 
 	<TextView
-		android:id="@+id/userName1"
+		android:id="@+id/userName"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="isim"
 		android:textColor="@color/loginText" 
 	    />
 	<TextView
-		android:id="@+id/userSurname1"
+		android:id="@+id/userSurname"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_marginTop="25dp"

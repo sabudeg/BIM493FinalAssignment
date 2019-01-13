@@ -9,7 +9,7 @@
 	android:background="#ff8a0303"
 	>
 
-
+	
 	<android.support.design.widget.BottomNavigationView
 		android:id="@+id/navigationBar"
 		android:layout_width="wrap_content"
@@ -33,5 +33,6 @@
 		>
     </FrameLayout>
 
+	
 
 </RelativeLayout>

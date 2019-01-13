@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Blooderhood</string>
   <string name="name_capitals">BLOODERHOOD</string>
-    <string name="title_home">MAP</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">HOME</string>
+    <string name="title_dashboard">POST</string>
+    <string name="title_notifications">PROFILE</string>
   
     <string name="google_maps_key">AIzaSyB4qCCP0pgN1kipr2Xs70o03cmsftlWub4</string>
   

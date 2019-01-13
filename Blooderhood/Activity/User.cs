@@ -15,8 +15,12 @@ namespace Blooderhood
     public class User
     {
 
-        string Name, Surname, age, phoneNumber;
-        bool isActive;
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string age { get; set; }
+        public string phoneNumber { get; set; }
+
+        public bool isActive;
         public User(string name, string surname, string age, string phoneNumber, bool isActive)
         {
             Name = name;
@@ -25,5 +29,15 @@ namespace Blooderhood
             this.phoneNumber = phoneNumber;
             this.isActive = isActive;
         }
+
+        public string getName()
+        {
+            return Name;
+        }
+
+        public User()
+        {
+        }
+
     }
 }

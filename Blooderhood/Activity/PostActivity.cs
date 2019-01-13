@@ -8,12 +8,15 @@ using Android.Content;
 using Android.Runtime;
 using Firebase.Auth;
 using Firebase.Database;
+using System.Collections.Generic;
 
 namespace Blooderhood.Activity
 {
     [Activity(Label = "PostActivity")]
     public class PostActivity : AppCompatActivity
     {
+        List<Post> Posts { get; set; }
+
         private static readonly int PLACE_PICKER_REQUEST = 1;
 
         FirebaseAuth auth = FirebaseAuth.GetInstance(WelcomeActivity.app);
@@ -65,6 +68,7 @@ namespace Blooderhood.Activity
             database = FirebaseDatabase.GetInstance(WelcomeActivity.app);
             myRef = database.GetReferenceFromUrl(FirebaseURL).Child("PostLocations");
 
+            myRef.Child(fUser.Uid).Child("userid").SetValue(fUser.Uid);
             myRef.Child(fUser.Uid).Child("name").SetValue(postName.Text);
             myRef.Child(fUser.Uid).Child("surname").SetValue(postSurname.Text);
             myRef.Child(fUser.Uid).Child("email").SetValue(fUser.Email);

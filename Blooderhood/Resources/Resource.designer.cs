@@ -2606,11 +2606,11 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b003f
 			public const int FUNCTION = 2131427391;
 			
-			// aapt resource value: 0x7f0b00e5
-			public const int FragmentText = 2131427557;
-			
 			// aapt resource value: 0x7f0b0040
 			public const int META = 2131427392;
+			
+			// aapt resource value: 0x7f0b00d9
+			public const int PostName = 2131427545;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int SHIFT = 2131427393;
@@ -2618,8 +2618,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0042
 			public const int SYM = 2131427394;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int action0 = 2131427504;
+			// aapt resource value: 0x7f0b00b1
+			public const int action0 = 2131427505;
 			
 			// aapt resource value: 0x7f0b0086
 			public const int action_bar = 2131427462;
@@ -2642,17 +2642,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0064
 			public const int action_bar_title = 2131427428;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int action_container = 2131427501;
+			// aapt resource value: 0x7f0b00ae
+			public const int action_container = 2131427502;
 			
 			// aapt resource value: 0x7f0b0087
 			public const int action_context_bar = 2131427463;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int action_divider = 2131427508;
+			// aapt resource value: 0x7f0b00b5
+			public const int action_divider = 2131427509;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int action_image = 2131427502;
+			// aapt resource value: 0x7f0b00af
+			public const int action_image = 2131427503;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -2669,11 +2669,11 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0066
 			public const int action_mode_close_button = 2131427430;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int action_text = 2131427503;
+			// aapt resource value: 0x7f0b00b0
+			public const int action_text = 2131427504;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int actions = 2131427517;
+			// aapt resource value: 0x7f0b00be
+			public const int actions = 2131427518;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int activity_chooser_view_content = 2131427431;
@@ -2708,8 +2708,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0061
 			public const int blocking = 2131427425;
 			
-			// aapt resource value: 0x7f0b00e6
-			public const int blooderhoodWelcome = 2131427558;
+			// aapt resource value: 0x7f0b00e9
+			public const int blooderhoodWelcome = 2131427561;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int bottom = 2131427400;
@@ -2717,20 +2717,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b006d
 			public const int buttonPanel = 2131427437;
 			
-			// aapt resource value: 0x7f0b00d6
-			public const int buttonPost = 2131427542;
+			// aapt resource value: 0x7f0b00d7
+			public const int buttonPost = 2131427543;
 			
-			// aapt resource value: 0x7f0b00e3
-			public const int buttonSignup = 2131427555;
+			// aapt resource value: 0x7f0b00e4
+			public const int buttonSignup = 2131427556;
 			
 			// aapt resource value: 0x7f0b00aa
 			public const int cancelButton = 2131427498;
 			
-			// aapt resource value: 0x7f0b00d9
-			public const int cancelPost = 2131427545;
-			
-			// aapt resource value: 0x7f0b00b1
-			public const int cancel_action = 2131427505;
+			// aapt resource value: 0x7f0b00b2
+			public const int cancel_action = 2131427506;
 			
 			// aapt resource value: 0x7f0b004f
 			public const int center = 2131427407;
@@ -2744,8 +2741,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b007d
 			public const int checkbox = 2131427453;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int chronometer = 2131427513;
+			// aapt resource value: 0x7f0b00ba
+			public const int chronometer = 2131427514;
 			
 			// aapt resource value: 0x7f0b0058
 			public const int clip_horizontal = 2131427416;
@@ -2759,14 +2756,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0095
 			public const int container = 2131427477;
 			
+			// aapt resource value: 0x7f0b00ab
+			public const int container1 = 2131427499;
+			
 			// aapt resource value: 0x7f0b0070
 			public const int contentPanel = 2131427440;
 			
 			// aapt resource value: 0x7f0b009a
 			public const int coordinator = 2131427482;
 			
-			// aapt resource value: 0x7f0b00d8
-			public const int createPost = 2131427544;
+			// aapt resource value: 0x7f0b00da
+			public const int createPost = 2131427546;
 			
 			// aapt resource value: 0x7f0b0077
 			public const int custom = 2131427447;
@@ -2801,23 +2801,23 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b002c
 			public const int disableHome = 2131427372;
 			
-			// aapt resource value: 0x7f0b00de
-			public const int editAge = 2131427550;
+			// aapt resource value: 0x7f0b00df
+			public const int editAge = 2131427551;
 			
-			// aapt resource value: 0x7f0b00e0
-			public const int editMail = 2131427552;
+			// aapt resource value: 0x7f0b00e1
+			public const int editMail = 2131427553;
 			
-			// aapt resource value: 0x7f0b00da
-			public const int editName = 2131427546;
+			// aapt resource value: 0x7f0b00db
+			public const int editName = 2131427547;
 			
-			// aapt resource value: 0x7f0b00e2
-			public const int editPassword = 2131427554;
+			// aapt resource value: 0x7f0b00e3
+			public const int editPassword = 2131427555;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int editPhone = 2131427539;
+			// aapt resource value: 0x7f0b00d4
+			public const int editPhone = 2131427540;
 			
-			// aapt resource value: 0x7f0b00dc
-			public const int editSurname = 2131427548;
+			// aapt resource value: 0x7f0b00dd
+			public const int editSurname = 2131427549;
 			
 			// aapt resource value: 0x7f0b0088
 			public const int edit_query = 2131427464;
@@ -2825,8 +2825,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b003b
 			public const int end = 2131427387;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int end_padder = 2131427519;
+			// aapt resource value: 0x7f0b00c0
+			public const int end_padder = 2131427520;
 			
 			// aapt resource value: 0x7f0b004a
 			public const int enterAlways = 2131427402;
@@ -2858,6 +2858,9 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0062
 			public const int forever = 2131427426;
 			
+			// aapt resource value: 0x7f0b00e8
+			public const int frgText = 2131427560;
+			
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
 			
@@ -2873,8 +2876,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b006c
 			public const int icon = 2131427436;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int icon_group = 2131427518;
+			// aapt resource value: 0x7f0b00bf
+			public const int icon_group = 2131427519;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int icon_only = 2131427364;
@@ -2885,23 +2888,23 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0069
 			public const int image = 2131427433;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int info = 2131427514;
+			// aapt resource value: 0x7f0b00bb
+			public const int info = 2131427515;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int infoCall = 2131427523;
+			// aapt resource value: 0x7f0b00c4
+			public const int infoCall = 2131427524;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int infoLoc = 2131427541;
-			
-			// aapt resource value: 0x7f0b00c1
-			public const int infoLocation = 2131427521;
-			
-			// aapt resource value: 0x7f0b00c0
-			public const int infoName = 2131427520;
+			// aapt resource value: 0x7f0b00d6
+			public const int infoLoc = 2131427542;
 			
 			// aapt resource value: 0x7f0b00c2
-			public const int infoPostDate = 2131427522;
+			public const int infoLocation = 2131427522;
+			
+			// aapt resource value: 0x7f0b00c1
+			public const int infoName = 2131427521;
+			
+			// aapt resource value: 0x7f0b00c3
+			public const int infoPostDate = 2131427523;
 			
 			// aapt resource value: 0x7f0b0063
 			public const int italic = 2131427427;
@@ -2930,8 +2933,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b006b
 			public const int list_item = 2131427435;
 			
-			// aapt resource value: 0x7f0b00e7
-			public const int loginButton = 2131427559;
+			// aapt resource value: 0x7f0b00ea
+			public const int loginButton = 2131427562;
 			
 			// aapt resource value: 0x7f0b00a9
 			public const int loginButton2 = 2131427497;
@@ -2939,17 +2942,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0097
 			public const int main_frame = 2131427479;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int map = 2131427499;
+			// aapt resource value: 0x7f0b00ac
+			public const int map = 2131427500;
 			
-			// aapt resource value: 0x7f0b00ea
-			public const int masked = 2131427562;
+			// aapt resource value: 0x7f0b00ed
+			public const int masked = 2131427565;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int media_actions = 2131427507;
+			// aapt resource value: 0x7f0b00b4
+			public const int media_actions = 2131427508;
 			
-			// aapt resource value: 0x7f0b00e4
-			public const int message = 2131427556;
+			// aapt resource value: 0x7f0b00e5
+			public const int message = 2131427557;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int middle = 2131427388;
@@ -2960,23 +2963,23 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0033
 			public const int multiply = 2131427379;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int navigation = 2131427500;
+			// aapt resource value: 0x7f0b00ad
+			public const int navigation = 2131427501;
 			
 			// aapt resource value: 0x7f0b0096
 			public const int navigationBar = 2131427478;
 			
-			// aapt resource value: 0x7f0b00eb
-			public const int navigation_dashboard = 2131427563;
+			// aapt resource value: 0x7f0b00ee
+			public const int navigation_dashboard = 2131427566;
 			
 			// aapt resource value: 0x7f0b009f
 			public const int navigation_header_container = 2131427487;
 			
-			// aapt resource value: 0x7f0b00ec
-			public const int navigation_home = 2131427564;
+			// aapt resource value: 0x7f0b00ef
+			public const int navigation_home = 2131427567;
 			
-			// aapt resource value: 0x7f0b00ed
-			public const int navigation_notifications = 2131427565;
+			// aapt resource value: 0x7f0b00f0
+			public const int navigation_notifications = 2131427568;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int never = 2131427398;
@@ -2987,14 +2990,14 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b001f
 			public const int normal = 2131427359;
 			
-			// aapt resource value: 0x7f0b00bc
-			public const int notification_background = 2131427516;
+			// aapt resource value: 0x7f0b00bd
+			public const int notification_background = 2131427517;
+			
+			// aapt resource value: 0x7f0b00b7
+			public const int notification_main_column = 2131427511;
 			
 			// aapt resource value: 0x7f0b00b6
-			public const int notification_main_column = 2131427510;
-			
-			// aapt resource value: 0x7f0b00b5
-			public const int notification_main_column_container = 2131427509;
+			public const int notification_main_column_container = 2131427510;
 			
 			// aapt resource value: 0x7f0b0056
 			public const int parallax = 2131427414;
@@ -3011,44 +3014,44 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b00a7
 			public const int passwordText = 2131427495;
 			
-			// aapt resource value: 0x7f0b00d4
-			public const int pickLocationButton = 2131427540;
+			// aapt resource value: 0x7f0b00d5
+			public const int pickLocationButton = 2131427541;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int pin = 2131427415;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int place_autocomplete_clear_button = 2131427526;
-			
-			// aapt resource value: 0x7f0b00c8
-			public const int place_autocomplete_powered_by_google = 2131427528;
-			
-			// aapt resource value: 0x7f0b00ca
-			public const int place_autocomplete_prediction_primary_text = 2131427530;
-			
-			// aapt resource value: 0x7f0b00cb
-			public const int place_autocomplete_prediction_secondary_text = 2131427531;
+			// aapt resource value: 0x7f0b00c7
+			public const int place_autocomplete_clear_button = 2131427527;
 			
 			// aapt resource value: 0x7f0b00c9
-			public const int place_autocomplete_progress = 2131427529;
+			public const int place_autocomplete_powered_by_google = 2131427529;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int place_autocomplete_search_button = 2131427524;
+			// aapt resource value: 0x7f0b00cb
+			public const int place_autocomplete_prediction_primary_text = 2131427531;
+			
+			// aapt resource value: 0x7f0b00cc
+			public const int place_autocomplete_prediction_secondary_text = 2131427532;
+			
+			// aapt resource value: 0x7f0b00ca
+			public const int place_autocomplete_progress = 2131427530;
 			
 			// aapt resource value: 0x7f0b00c5
-			public const int place_autocomplete_search_input = 2131427525;
+			public const int place_autocomplete_search_button = 2131427525;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int place_autocomplete_separator = 2131427527;
+			// aapt resource value: 0x7f0b00c6
+			public const int place_autocomplete_search_input = 2131427526;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int postBtype = 2131427537;
+			// aapt resource value: 0x7f0b00c8
+			public const int place_autocomplete_separator = 2131427528;
 			
-			// aapt resource value: 0x7f0b00cd
-			public const int postName = 2131427533;
+			// aapt resource value: 0x7f0b00d2
+			public const int postBtype = 2131427538;
 			
-			// aapt resource value: 0x7f0b00cf
-			public const int postSurname = 2131427535;
+			// aapt resource value: 0x7f0b00ce
+			public const int postName = 2131427534;
+			
+			// aapt resource value: 0x7f0b00d0
+			public const int postSurname = 2131427536;
 			
 			// aapt resource value: 0x7f0b0006
 			public const int progress_circular = 2131427334;
@@ -3062,11 +3065,11 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0054
 			public const int right = 2131427412;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int right_icon = 2131427515;
+			// aapt resource value: 0x7f0b00bc
+			public const int right_icon = 2131427516;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int right_side = 2131427511;
+			// aapt resource value: 0x7f0b00b8
+			public const int right_side = 2131427512;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int satellite = 2131427360;
@@ -3143,8 +3146,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0030
 			public const int showTitle = 2131427376;
 			
-			// aapt resource value: 0x7f0b00e8
-			public const int signupButton = 2131427560;
+			// aapt resource value: 0x7f0b00eb
+			public const int signupButton = 2131427563;
 			
 			// aapt resource value: 0x7f0b0098
 			public const int smallLabel = 2131427480;
@@ -3179,8 +3182,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0055
 			public const int start = 2131427413;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int status_bar_latest_event_content = 2131427506;
+			// aapt resource value: 0x7f0b00b3
+			public const int status_bar_latest_event_content = 2131427507;
 			
 			// aapt resource value: 0x7f0b0080
 			public const int submenuarrow = 2131427456;
@@ -3203,14 +3206,14 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b001b
 			public const int text2 = 2131427355;
 			
-			// aapt resource value: 0x7f0b00d0
-			public const int textBloodType = 2131427536;
+			// aapt resource value: 0x7f0b00d1
+			public const int textBloodType = 2131427537;
 			
-			// aapt resource value: 0x7f0b00cc
-			public const int textPostName = 2131427532;
+			// aapt resource value: 0x7f0b00cd
+			public const int textPostName = 2131427533;
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int textPostSurname = 2131427534;
+			// aapt resource value: 0x7f0b00cf
+			public const int textPostSurname = 2131427535;
 			
 			// aapt resource value: 0x7f0b0074
 			public const int textSpacerNoButtons = 2131427444;
@@ -3218,23 +3221,23 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0073
 			public const int textSpacerNoTitle = 2131427443;
 			
-			// aapt resource value: 0x7f0b00e1
-			public const int textView10 = 2131427553;
+			// aapt resource value: 0x7f0b00e2
+			public const int textView10 = 2131427554;
 			
-			// aapt resource value: 0x7f0b00d2
-			public const int textView15 = 2131427538;
+			// aapt resource value: 0x7f0b00d3
+			public const int textView15 = 2131427539;
 			
-			// aapt resource value: 0x7f0b00d7
-			public const int textView6 = 2131427543;
+			// aapt resource value: 0x7f0b00d8
+			public const int textView6 = 2131427544;
 			
-			// aapt resource value: 0x7f0b00db
-			public const int textView7 = 2131427547;
+			// aapt resource value: 0x7f0b00dc
+			public const int textView7 = 2131427548;
 			
-			// aapt resource value: 0x7f0b00dd
-			public const int textView8 = 2131427549;
+			// aapt resource value: 0x7f0b00de
+			public const int textView8 = 2131427550;
 			
-			// aapt resource value: 0x7f0b00df
-			public const int textView9 = 2131427551;
+			// aapt resource value: 0x7f0b00e0
+			public const int textView9 = 2131427552;
 			
 			// aapt resource value: 0x7f0b00a4
 			public const int text_input_password_toggle = 2131427492;
@@ -3245,8 +3248,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0015
 			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int time = 2131427512;
+			// aapt resource value: 0x7f0b00b9
+			public const int time = 2131427513;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int title = 2131427356;
@@ -3290,11 +3293,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0031
 			public const int useLogo = 2131427377;
 			
+			// aapt resource value: 0x7f0b00e6
+			public const int userName = 2131427558;
+			
+			// aapt resource value: 0x7f0b00e7
+			public const int userSurname = 2131427559;
+			
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00e9
-			public const int visible = 2131427561;
+			// aapt resource value: 0x7f0b00ec
+			public const int visible = 2131427564;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int wide = 2131427366;
@@ -3494,94 +3503,97 @@ namespace Blooderhood
 			public const int MapActLayout = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int notification_action = 2130968619;
+			public const int MapsLayout = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_action_tombstone = 2130968620;
+			public const int notification_action = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_media_action = 2130968621;
+			public const int notification_action_tombstone = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_media_cancel_action = 2130968622;
+			public const int notification_media_action = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_template_big_media = 2130968623;
+			public const int notification_media_cancel_action = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_template_big_media_custom = 2130968624;
+			public const int notification_template_big_media = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_template_big_media_narrow = 2130968625;
+			public const int notification_template_big_media_custom = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_big_media_narrow_custom = 2130968626;
+			public const int notification_template_big_media_narrow = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_custom_big = 2130968627;
+			public const int notification_template_big_media_narrow_custom = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_icon_group = 2130968628;
+			public const int notification_template_custom_big = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_lines_media = 2130968629;
+			public const int notification_template_icon_group = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_media = 2130968630;
+			public const int notification_template_lines_media = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_media_custom = 2130968631;
+			public const int notification_template_media = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_part_chronometer = 2130968632;
+			public const int notification_template_media_custom = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_part_time = 2130968633;
+			public const int notification_template_part_chronometer = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int pinInfo = 2130968634;
+			public const int notification_template_part_time = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int place_autocomplete_fragment = 2130968635;
+			public const int pinInfo = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int place_autocomplete_item_powered_by_google = 2130968636;
+			public const int place_autocomplete_fragment = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int place_autocomplete_item_prediction = 2130968637;
+			public const int place_autocomplete_item_powered_by_google = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int place_autocomplete_progress = 2130968638;
+			public const int place_autocomplete_item_prediction = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int PostActivity = 2130968639;
+			public const int place_autocomplete_progress = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int PostFragment = 2130968640;
+			public const int PostActivity = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int select_dialog_item_material = 2130968641;
+			public const int PostFragment = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int select_dialog_multichoice_material = 2130968642;
+			public const int select_dialog_item_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int select_dialog_singlechoice_material = 2130968643;
+			public const int select_dialog_multichoice_material = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int Signup = 2130968644;
+			public const int select_dialog_singlechoice_material = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int support_simple_spinner_dropdown_item = 2130968645;
+			public const int Signup = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int tooltip = 2130968646;
+			public const int support_simple_spinner_dropdown_item = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int UserDetailFragment = 2130968647;
+			public const int tooltip = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int Welcome = 2130968648;
+			public const int UserInfo = 2130968648;
+			
+			// aapt resource value: 0x7f040049
+			public const int Welcome = 2130968649;
 			
 			static Layout()
 			{

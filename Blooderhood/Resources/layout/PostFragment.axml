@@ -11,9 +11,9 @@
     >
 	<TextView
 		android:id="@+id/PostName"
-		android:layout_width="250"
+		android:layout_width="250dp"
 		android:layout_height="match_parent"
-		android:layout_above="@id/createPost"
+		android:layout_above="@+id/createPost"
 		android:text="Welcome to the blood sharing platform"
 		android:textColor="@color/loginText"
 		android:layout_centerInParent="true"

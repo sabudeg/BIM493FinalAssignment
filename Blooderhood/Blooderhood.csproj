@@ -66,12 +66,12 @@
     <Compile Include="Activity\Adapter1.cs" />
     <Compile Include="Activity\LoginActivity.cs" />
     <Compile Include="Activity\MainActivity.cs" />
-    <Compile Include="Activity\MapActivity.cs" />
+    <Compile Include="Activity\MapsActivity.cs" />
+    <Compile Include="Activity\Post.cs" />
     <Compile Include="Activity\PostActivity.cs" />
     <Compile Include="Activity\PostFragment.cs" />
     <Compile Include="Activity\SignupActivity.cs" />
     <Compile Include="Activity\User.cs" />
-    <Compile Include="Activity\UserDetailFragment.cs" />
     <Compile Include="Activity\UserInfoActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,11 +170,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\UserDetailFragment.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\MapActLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -186,6 +181,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\PostActivity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\UserInfo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MapsLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

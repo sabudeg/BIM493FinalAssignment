@@ -75,4 +75,9 @@ namespace Blooderhood.Activity
         //Your adapter views to re-use
         //public TextView Title { get; set; }
     }
+
+
+    
+
+
 }

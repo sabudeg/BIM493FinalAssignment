@@ -17,7 +17,7 @@ using Firebase.Database;
 
 namespace Blooderhood
 {
-    [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_launcher_round", MainLauncher = true)]
+   [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_launcher_round", MainLauncher = true)]
     //[Activity(Label = "WelcomeActivity")]
     public class WelcomeActivity : AppCompatActivity
     {
