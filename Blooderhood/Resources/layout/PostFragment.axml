@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:background="@color/bloodRed"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentLeft="true"
+	android:layout_alignParentStart="true"
+	android:background="@color/bloodRed"
+	android:gravity="center_vertical"
     >
 	<TextView
 		android:id="@+id/PostName"
 		android:layout_width="250dp"
 		android:layout_height="match_parent"
 		android:layout_above="@+id/createPost"
-		android:text="Welcome to the blood sharing platform"
+		android:text="Welcome to the blood sharing platform."
 		android:textColor="@color/loginText"
 		android:layout_centerInParent="true"
-		android:autoSizeTextType="uniform"
 		android:textAlignment="center"
 		android:textStyle="bold"
-		android:textAllCaps="false" 
+		android:textAllCaps="false"
+		android:textSize="40dp" 
 	    />
-
-    <Button
-        android:id="@+id/createPost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CREATE POST" 
-	    android:layout_centerInParent="true"/>
+	<Button
+		android:id="@+id/createPost"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="CREATE POST"
+		android:layout_centerInParent="true"
+		android:textStyle="bold"
+		android:background="@drawable/buttonshape"/>
 
 </RelativeLayout>

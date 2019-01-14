@@ -31,7 +31,11 @@ namespace Blooderhood
 
             Posts.Add(new Post("Burak", "Değirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
             Posts.Add(new Post("Deniz", "Kabakulak", "0+", "+905069310124", "39.786563, 30.510455"));
-            Posts.Add(new Post("Özgur", "Özşen", "A-", "+905999999999", "39.790512, 30.508417"));
+            Posts.Add(new Post("Özgur", "Özşen", "A-", "+905999999999", "39.791480, 30.495140"));
+            Posts.Add(new Post("Atiba", "Hutchinson", "B-", "+905993513441", "39.785699, 30.504584"));
+            Posts.Add(new Post("Loris", "Karius", "0-", "+9051234568866", "39.781336, 30.508704"));
+            Posts.Add(new Post("Ricardo", "Quaresma", "A+", "+9051234568866", "39.766682, 30.503473"));
+            Posts.Add(new Post("Lionel", "Messi", "B+", "+9051234568866", "39.782448, 30.517886"));
 
             SetUpMap();
 

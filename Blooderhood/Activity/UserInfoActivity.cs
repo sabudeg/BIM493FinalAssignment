@@ -26,6 +26,7 @@ namespace Blooderhood.Activity
 
         TextView NameInfo;
         TextView SurnameInfo;
+        TextView AgeInfo,PhoneInfo,EmailInfo;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,18 +38,23 @@ namespace Blooderhood.Activity
 
             NameInfo = FindViewById<TextView>(Resource.Id.userName);
             SurnameInfo = FindViewById<TextView>(Resource.Id.userSurname);
+            AgeInfo = FindViewById<TextView>(Resource.Id.userAge);
+            PhoneInfo = FindViewById<TextView>(Resource.Id.userPhone);
+            EmailInfo = FindViewById<TextView>(Resource.Id.userEmail);
 
-            NameInfo.Text = "Burak";
-            SurnameInfo.Text = "Degirmenci";
+           
 
             LoadData();
-
-            GetData();
+            //GetData();
         }
 
         private void LoadData()
         {
-            NameInfo.Text = "calismadi";
+            NameInfo.Text += "Burak";
+            SurnameInfo.Text += "Degirmenci";
+            AgeInfo.Text += "23";
+            PhoneInfo.Text += "+905349599652";
+            EmailInfo.Text += fUser.Email.ToString();
 
             var firebase = new FirebaseClient(FirebaseURL);
             var obs = firebase

@@ -39,14 +39,27 @@ namespace Blooderhood
             btnCancel.Click += delegate { base.Finish(); };
 
             btnLogin = FindViewById<Button>(Resource.Id.loginButton2);
-            btnLogin.Click += delegate { LoginUser(userMail.Text, userPassword.Text); };
+            btnLogin.Click += delegate {
+                if (userMail.Text == null || userPassword.Text == null)
+                {
+                    Toast.MakeText(this, "Fill the blank areas", ToastLength.Long).Show();
+                }
+
+                // if( userMail.Text != null && userPassword.Text != null)
+                else { 
+                LoginUser(userMail.Text, userPassword.Text);
+                }
+            };
         }
 
         private void LoginUser(string email, string password)
         {
+           
+
             auth.SignInWithEmailAndPassword(email, password)
-                .AddOnCompleteListener(this);
+                 .AddOnCompleteListener(this);
         }
+           
 
         public void OnComplete(Task task)
         {

@@ -2717,8 +2717,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0061
 			public const int blocking = 2131427425;
 			
-			// aapt resource value: 0x7f0b00e9
-			public const int blooderhoodWelcome = 2131427561;
+			// aapt resource value: 0x7f0b00eb
+			public const int blooderhoodWelcome = 2131427563;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int bottom = 2131427400;
@@ -2867,9 +2867,6 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0062
 			public const int forever = 2131427426;
 			
-			// aapt resource value: 0x7f0b00e8
-			public const int frgText = 2131427560;
-			
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
 			
@@ -2942,8 +2939,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b006b
 			public const int list_item = 2131427435;
 			
-			// aapt resource value: 0x7f0b00ea
-			public const int loginButton = 2131427562;
+			// aapt resource value: 0x7f0b00ec
+			public const int loginButton = 2131427564;
 			
 			// aapt resource value: 0x7f0b00a9
 			public const int loginButton2 = 2131427497;
@@ -2954,8 +2951,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b00ac
 			public const int map = 2131427500;
 			
-			// aapt resource value: 0x7f0b00ed
-			public const int masked = 2131427565;
+			// aapt resource value: 0x7f0b00ef
+			public const int masked = 2131427567;
 			
 			// aapt resource value: 0x7f0b00b4
 			public const int media_actions = 2131427508;
@@ -2978,17 +2975,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0096
 			public const int navigationBar = 2131427478;
 			
-			// aapt resource value: 0x7f0b00ee
-			public const int navigation_dashboard = 2131427566;
+			// aapt resource value: 0x7f0b00f0
+			public const int navigation_dashboard = 2131427568;
 			
 			// aapt resource value: 0x7f0b009f
 			public const int navigation_header_container = 2131427487;
 			
-			// aapt resource value: 0x7f0b00ef
-			public const int navigation_home = 2131427567;
+			// aapt resource value: 0x7f0b00f1
+			public const int navigation_home = 2131427569;
 			
-			// aapt resource value: 0x7f0b00f0
-			public const int navigation_notifications = 2131427568;
+			// aapt resource value: 0x7f0b00f2
+			public const int navigation_notifications = 2131427570;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int never = 2131427398;
@@ -3155,8 +3152,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0030
 			public const int showTitle = 2131427376;
 			
-			// aapt resource value: 0x7f0b00eb
-			public const int signupButton = 2131427563;
+			// aapt resource value: 0x7f0b00ed
+			public const int signupButton = 2131427565;
 			
 			// aapt resource value: 0x7f0b0098
 			public const int smallLabel = 2131427480;
@@ -3302,8 +3299,17 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0031
 			public const int useLogo = 2131427377;
 			
+			// aapt resource value: 0x7f0b00e8
+			public const int userAge = 2131427560;
+			
+			// aapt resource value: 0x7f0b00ea
+			public const int userEmail = 2131427562;
+			
 			// aapt resource value: 0x7f0b00e6
 			public const int userName = 2131427558;
+			
+			// aapt resource value: 0x7f0b00e9
+			public const int userPhone = 2131427561;
 			
 			// aapt resource value: 0x7f0b00e7
 			public const int userSurname = 2131427559;
@@ -3311,8 +3317,8 @@ namespace Blooderhood
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00ec
-			public const int visible = 2131427564;
+			// aapt resource value: 0x7f0b00ee
+			public const int visible = 2131427566;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int wide = 2131427366;
