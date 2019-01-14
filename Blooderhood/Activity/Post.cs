@@ -24,6 +24,13 @@ namespace Blooderhood
         {
         }
 
+        public static List<Post> Posts = new List<Post>();
+
+        public static List<Post> getPost()
+        {
+            return Posts;
+        }
+
         public string getName()
         {
             return Name;

@@ -75,7 +75,7 @@ namespace Blooderhood.Activity
             myRef.Child(fUser.Uid).Child("phone").SetValue(editPhone.Text);
             myRef.Child(fUser.Uid).Child("location").SetValue(latlng);
 
-            //Posts.Add(new Post("Burak", "Değirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
+            Post.Posts.Add(new Post(postName.Text, postSurname.Text, postBtype.Text, editPhone.Text, latlng));
 
             Toast.MakeText(this, "Your post have been published.", ToastLength.Long).Show();
             base.Finish();
