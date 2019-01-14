@@ -32,7 +32,7 @@ namespace Blooderhood
 
             postFragment = new PostFragment();
             //mapsFragment = new MapsFragment();
-            // userDetailFragment = new UserDetailFragment();
+            //userDetailFragment = new UserDetailFragment();
 
             userInfo = new UserInfoActivity();
 

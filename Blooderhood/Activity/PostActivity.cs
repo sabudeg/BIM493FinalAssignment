@@ -15,7 +15,6 @@ namespace Blooderhood.Activity
     [Activity(Label = "PostActivity")]
     public class PostActivity : AppCompatActivity
     {
-        List<Post> Posts { get; set; }
 
         private static readonly int PLACE_PICKER_REQUEST = 1;
 
@@ -75,6 +74,8 @@ namespace Blooderhood.Activity
             myRef.Child(fUser.Uid).Child("bloodtype").SetValue(postBtype.Text);
             myRef.Child(fUser.Uid).Child("phone").SetValue(editPhone.Text);
             myRef.Child(fUser.Uid).Child("location").SetValue(latlng);
+
+            //Posts.Add(new Post("Burak", "Değirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
 
             Toast.MakeText(this, "Your post have been published.", ToastLength.Long).Show();
             base.Finish();

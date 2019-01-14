@@ -43,7 +43,6 @@ namespace Blooderhood.Activity
             EmailInfo = FindViewById<TextView>(Resource.Id.userEmail);
 
            
-
             LoadData();
             //GetData();
         }
@@ -64,7 +63,6 @@ namespace Blooderhood.Activity
                //.Subscribe(d => Console.WriteLine(d.Key));
                 .Subscribe(d => d.Object.Name = NameInfo.Text);
 
-
             //var observable = firebase
             //  .Child("users")
             //  .AsObservable<User>()
@@ -80,7 +78,6 @@ namespace Blooderhood.Activity
 
         public void OnCancelled(DatabaseError error)
         {
-            // Handle error however you have to
         }
 
         public void OnDataChange(DataSnapshot snapshot)

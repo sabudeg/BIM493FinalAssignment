@@ -71,7 +71,6 @@ namespace Blooderhood
                 User user = new User(editName.Text, editSurname.Text, editAge.Text, editPhone.Text, false);
                 //myRef.Child(fUser.Uid).SetValue(ObjectExtensions.ToJavaObject<User>(user));
 
-
                 //Dictionary<string, string> userMap = new Dictionary<string, string>();
                 //userMap.Add("name", editName.Text);
                 //userMap.Add("surname", editSurname.Text);

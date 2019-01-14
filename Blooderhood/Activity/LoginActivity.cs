@@ -54,8 +54,6 @@ namespace Blooderhood
 
         private void LoginUser(string email, string password)
         {
-           
-
             auth.SignInWithEmailAndPassword(email, password)
                  .AddOnCompleteListener(this);
         }
