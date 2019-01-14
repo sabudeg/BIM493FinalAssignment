@@ -15,7 +15,7 @@
           class="com.google.android.gms.maps.MapFragment" />
 
 
-	<android.support.design.widget.BottomNavigationView
+<!--	<android.support.design.widget.BottomNavigationView
 		android:id="@+id/navigation"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -24,6 +24,6 @@
 		android:background="@color/bloodRed"
 		android:layout_alignParentBottom="true"
 		app:menu="@menu/navigation"
-	/>
+	/> -->
 
 </RelativeLayout>

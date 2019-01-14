@@ -15,7 +15,7 @@ using System.Collections;
 namespace Blooderhood
 {
     [Activity(Label = "MapsActivity", Theme ="@style/AppTheme")]
-    public class MapsActivity : AppCompatActivity, IOnMapReadyCallback, IInfoWindowAdapter, BottomNavigationView.IOnNavigationItemSelectedListener
+    public class MapsActivity : AppCompatActivity, IOnMapReadyCallback, IInfoWindowAdapter, IOnInfoWindowClickListener, BottomNavigationView.IOnNavigationItemSelectedListener
     {
 
         public static FirebaseApp app;
@@ -32,16 +32,14 @@ namespace Blooderhood
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MapsLayout);
 
-            Posts.Add(new Post("burak", "degirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
-
-            p.Add(new Post("burak", "degirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
-
-            //PostAdapter adapter = new PostAdapter(this.Posts);
+            Posts.Add(new Post("Burak", "Değirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
+            Posts.Add(new Post("Deniz", "Kabakulak", "0+", "+90536545856", "39.786563, 30.510455"));
+            Posts.Add(new Post("Özgur", "Özşen", "A-", "+90565465436", "39.790512, 30.508417"));
 
             SetUpMap();
 
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigationBar);
-          //  navigation.SetOnNavigationItemSelectedListener(this);
+            //navigation.SetOnNavigationItemSelectedListener(this);
         }
         private void SetUpMap()
         {
@@ -59,24 +57,6 @@ namespace Blooderhood
 
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(latlng, 13);
             mMap.MoveCamera(camera);
-
-            MarkerOptions options = new MarkerOptions()
-                .SetPosition(new LatLng(39.766193, 30.526714))
-                .SetTitle("Burak Degirmenci")
-                .SetSnippet("B");
-            //.Draggable(true);
-
-            mMap.AddMarker(options);
-            mMap.SetInfoWindowAdapter(this);
-
-            MarkerOptions options1 = new MarkerOptions()
-               .SetPosition(new LatLng(39.786563, 30.510455))
-               .SetTitle("Deniz Kabakulak")
-               .SetSnippet("0");
-
-            mMap.AddMarker(options1);
-            mMap.SetInfoWindowAdapter(this);
-
 
             PrintPosts();
         }
@@ -97,111 +77,106 @@ namespace Blooderhood
 
         public View GetInfoContents(Marker marker)
         {
-            throw new System.NotImplementedException();
+            return null;
         }
 
         public View GetInfoWindow(Marker marker)
         {
             View view = LayoutInflater.Inflate(Resource.Layout.pinInfo, null, false);
-            view.FindViewById<TextView>(Resource.Id.infoName).Text += "Burak D.";
+            view.FindViewById<TextView>(Resource.Id.infoName).Text += marker.Title.ToString();
+            view.FindViewById<TextView>(Resource.Id.infoSnippet).Text = marker.Snippet.ToString();
+            view.FindViewById<TextView>(Resource.Id.infoPhone).Text += marker.Tag.ToString();
             return view;
+
+           // return null;
         }
 
-        //protected Marker createMarker(double latitude, double longitude, String title, String snippet, int iconResID)
-        //{
+        public void OnInfoWindowClick(Marker marker)
+        {
+            Toast.MakeText(this, "Info Window Clicked", ToastLength.Long).Show();
 
-        //    return googleMap.addMarker(new MarkerOptions()
-        //            .position(new LatLng(latitude, longitude))
-        //            .anchor(0.5f, 0.5f)
-        //            .title(title)
-        //            .snippet(snippet);
-        //}
+            Intent intent = new Intent(Intent.ActionDial, Android.Net.Uri.FromParts("tel", marker.Tag.ToString(), null));
+            intent.SetFlags(ActivityFlags.NewTask);
+            StartActivity(intent);
+
+        }
+
+        
 
         public void PrintPosts()
         {
-
-            foreach (Post post in p)
+            MarkerOptions options;
+            foreach (Post post in Posts)
             {
+                string[] latlong = post.getLocation().Split(",");
+                double lat = double.Parse(latlong[0]);
+                double lng = double.Parse(latlong[1]);
 
-                MarkerOptions options3 = new MarkerOptions()
-               .SetPosition(new LatLng(39.766193, 30.526714))
-               .SetTitle(post.getName())
-               .SetSnippet("burak");
-                //.Draggable(true);
-                mMap.AddMarker(options3);
+                options = new MarkerOptions()
+               .SetPosition(new LatLng(lat, lng))
+               .SetTitle(post.getName() + " " + post.getSurname())
+               .SetSnippet("Needed Blood: " + post.getBloodType());
+                //There is no .setTag method on Xamarin so all the information added into snippet by parsing it with \n      + "\n" + "PhoneNumber :" + post.getPhone());
+
+                Marker m = mMap.AddMarker(options);
+                m.Tag = post.getPhone();
                 mMap.SetInfoWindowAdapter(this);
+                mMap.SetOnInfoWindowClickListener(this);
+
             }
 
         }
-            //    for (int i = 0; i < Posts.Count; i++)
-            //    {
-            //        Posts.G
-            //    }
 
-
-            //Posts.ForEach(x =>
-            //{
-            //    MarkerOptions options = new MarkerOptions()
-            //   .SetPosition(39.766193, 30.526714)
-            //   .SetPosition
-            //   .SetTitle("ESK")
-            //   .SetSnippet("burak");
-            //    //.Draggable(true);
-
-            //    mMap.AddMarker(options);
-            //    mMap.SetInfoWindowAdapter(this);
-            //});
-        }
     }
+}
 
 
 
-    //class PostAdapter : BaseAdapter<Post>
-    //{
+//class PostAdapter : BaseAdapter<Post>
+//{
 
-    //    public List<Post> Posts;
-    //    private Context mContext;
+//    public List<Post> Posts;
+//    private Context mContext;
 
-    //    public PostAdapter(Context context, List<Post> items)
-    //    {
-    //        this.Posts = items;
-    //        this.mContext = context;
-    //    }
+//    public PostAdapter(Context context, List<Post> items)
+//    {
+//        this.Posts = items;
+//        this.mContext = context;
+//    }
 
-    //    public override  Post this[int position]
-    //    {
-    //        get { return Posts[position]; }
-    //    }
+//    public override Post this[int position]
+//    {
+//        get { return Posts[position]; }
+//    }
 
-    //    public override int Count
-    //    {
-    //        get { return Posts.Count; }
-    //    }
+//    public override int Count
+//    {
+//        get { return Posts.Count; }
+//    }
 
-    //    public override long GetItemId(int position)
-    //    {
-    //        return position;
-    //    }
+//    public override long GetItemId(int position)
+//    {
+//        return position;
+//    }
 
-    //    public override View GetView(int position, View convertView, ViewGroup parent)
-    //    {
-    //        View row = convertView;
+//    public override View GetView(int position, View convertView, ViewGroup parent)
+//    {
+//        View row = convertView;
 
-    //        if (row == null)
-    //        {
-    //            row = LayoutInflater.From(mContext).Inflate(Resource.Layout.pinInfo, null, false);
-    //        }
+//        if (row == null)
+//        {
+//            row = LayoutInflater.From(mContext).Inflate(Resource.Layout.pinInfo, null, false);
+//        }
 
-    //        //TextView PersonName = row.FindViewById<TextView>(Resource.Id.PersonName);
-    //        //PersonName.Text = Posts[position].Name;
-    //        MarkerOptions options = new MarkerOptions()
-    //          //  .SetPosition(39.766193, 30.526714)
-    //           .SetPosition(latlng)
-    //           .SetTitle(Posts[position].Name)
-    //           .SetSnippet("burak");
+//        //TextView PersonName = row.FindViewById<TextView>(Resource.Id.PersonName);
+//        //PersonName.Text = Posts[position].Name;
+//        MarkerOptions options = new MarkerOptions()
+//           .SetPosition(latlng)
+//           .SetTitle(Posts[position].Name)
+//           .SetSnippet("snippet");
 
-    //        return row;
-    //    }
-    //}
+//        return row;
+//    }
+//}
 
 //}

@@ -29,6 +29,27 @@ namespace Blooderhood
             return Name;
         }
 
+        public string getSurname()
+        {
+            return Surname;
+        }
+
+        public string getBloodType()
+        {
+            return BloodType;
+        }
+
+        public string getPhone()
+        {
+            return Phone;
+        }
+
+        public string getLocation()
+        {
+            return Location;
+        }
+
+
         public Post(string name, string surname, string bloodType, string phone, string location)
         {
             Name = name;
