@@ -77,7 +77,4 @@ namespace Blooderhood.Activity
     }
 
 
-    
-
-
 }

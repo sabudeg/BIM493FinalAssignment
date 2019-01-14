@@ -23,9 +23,6 @@ namespace Blooderhood
 
         private List<Post> Posts = new List<Post>();
 
-        ArrayList p = new ArrayList();
-
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
@@ -33,8 +30,8 @@ namespace Blooderhood
             SetContentView(Resource.Layout.MapsLayout);
 
             Posts.Add(new Post("Burak", "Değirmenci", "B+", "+905349599652", "39.766193, 30.526714"));
-            Posts.Add(new Post("Deniz", "Kabakulak", "0+", "+90536545856", "39.786563, 30.510455"));
-            Posts.Add(new Post("Özgur", "Özşen", "A-", "+90565465436", "39.790512, 30.508417"));
+            Posts.Add(new Post("Deniz", "Kabakulak", "0+", "+905069310124", "39.786563, 30.510455"));
+            Posts.Add(new Post("Özgur", "Özşen", "A-", "+905999999999", "39.790512, 30.508417"));
 
             SetUpMap();
 
@@ -93,15 +90,13 @@ namespace Blooderhood
 
         public void OnInfoWindowClick(Marker marker)
         {
-            Toast.MakeText(this, "Info Window Clicked", ToastLength.Long).Show();
+           Toast.MakeText(this, "Redirecting to call", ToastLength.Short).Show();
 
             Intent intent = new Intent(Intent.ActionDial, Android.Net.Uri.FromParts("tel", marker.Tag.ToString(), null));
             intent.SetFlags(ActivityFlags.NewTask);
             StartActivity(intent);
-
         }
 
-        
 
         public void PrintPosts()
         {

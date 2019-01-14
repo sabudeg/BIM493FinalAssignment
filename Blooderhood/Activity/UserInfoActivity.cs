@@ -38,10 +38,8 @@ namespace Blooderhood.Activity
             NameInfo = FindViewById<TextView>(Resource.Id.userName);
             SurnameInfo = FindViewById<TextView>(Resource.Id.userSurname);
 
-
             NameInfo.Text = "Burak";
             SurnameInfo.Text = "Degirmenci";
-
 
             LoadData();
 
